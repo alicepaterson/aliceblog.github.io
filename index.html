@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" type="text/css"
+  		href="css/blog.css">
+<style>
+	@import url('https://fonts.googleapis.com/css?family=Coming+Soon');
+</style>
+
+</head>
+<body>
+  <header>
+    <img src="http://i.imgur.com/LiFpISut.jpg">
+    <h1>Alice's Blog</h1>
+    <ul>
+      <li><a href="index.html">About Me</a></li>
+      <li><a href="blog-page.html">Blog</a></li>
+      <li><a href="contact-me.html">Contact me</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2>About me</h2>
+    <p>I am a final year student at Imperial College London studying Biochemistry</p>
+    <button>Like</button>
+  </article>
+  <script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+  </script>
+</body>
