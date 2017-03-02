@@ -40,7 +40,8 @@
       margin: 0 auto;
     }
     input {
-        border: 0;
+        border: 2px black;
+        border-radius: 2px;
         padding: 10px;
         font-size: 18px;
     }
@@ -49,7 +50,10 @@
         color: white;
         opacity: .7;
     }
-        
+    input[type="submit"]:hover {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }  
     @media (max-width: 500px) {
       h1 {
         font-size: 50px;
@@ -61,3 +65,4 @@
         display: block;
       }
     }
+
