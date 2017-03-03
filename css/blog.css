@@ -50,7 +50,16 @@
       font-family: 'Coming soon', sans-serif;
       font-size:20px;
     }
-    article {
+    /*article {
+      background: rgba(0,0,0,0.5);
+      font-family: 'Raleway', sans-serif;
+      font-weight: 200;
+      color: white;
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }*/
+    .blog-entry {
       background: rgba(0,0,0,0.5);
       font-family: 'Raleway', sans-serif;
       font-weight: 200;

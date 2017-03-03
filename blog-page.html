@@ -17,21 +17,29 @@
       <li><a href="contact-me.html" class="hvr-grow">Contact me</a></li>
     </ul>
   </header>
-  <article>
+  <div id="blog-entries">
+  <article class="blog-entry">
+  <div>
     <h2>Week 1</h2>
     <p>This week we began the course and learnt some basic tags in html, including paragraphs, lists and fonts. I also learnt how to add links with different backgrounds and to add borders to images.</p>
     <button>Like</button>
   </article>
-  <article>
+  </div>
+  <div>
+  <article class="blog-entry">
     <h2>Week 2</h2>
     <p>This week we began using css to format our webpages. I have also looked at how to use google fonts, and using classes/id's to specify te style of individual elements on my page</p>
     <button>Like</button>
   </article>
-  <article>
+  </div>
+  <div>
+  <article class="blog-entry">
     <h2>Week 3</h2>
     <p>This week we learnt what GitHub is, how to create a repository, branches, commits, and how to pull requests. I also published this page!</p>
     <button>Like</button>
   </article>
+  </div>
+  </div>
   <script>
     $("button").on("click", function() {
       alert("Clicked!");
