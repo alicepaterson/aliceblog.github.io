@@ -50,16 +50,7 @@
       font-family: 'Coming soon', sans-serif;
       font-size:20px;
     }
-    /*article {
-      background: rgba(0,0,0,0.5);
-      font-family: 'Raleway', sans-serif;
-      font-weight: 200;
-      color: white;
-      max-width: 500px;
-      padding: 20px;
-      margin: 0 auto;
-    }*/
-    .blog-entry {
+    article {
       background: rgba(0,0,0,0.5);
       font-family: 'Raleway', sans-serif;
       font-weight: 200;
@@ -68,9 +59,19 @@
       padding: 20px;
       margin: 0 auto;
     }
+    .blog-entry {
+      background: rgba(0,0,0,0.5);
+      font-family: 'Raleway', sans-serif;
+      font-weight: 200;
+      color: white;
+      max-width: 60%;
+      padding: 20px;
+      margin: 0 auto;
+    }
     p {
       font-family: 'Raleway';
       font-weight: 200;
+      text-align: justify;
     }
     input {
       border: 2px black;
