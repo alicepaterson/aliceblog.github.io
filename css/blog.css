@@ -102,7 +102,22 @@
       -webkit-transform: scale(1.1);
       transform: scale(1.1);
     }
-
+    .back-to-top {
+      display:none;
+      position: fixed;
+      bottom: 2em;
+      right: 0px;
+      text-decoration: none;
+      color: #000000;
+      background-color: rgba(235, 235, 235, 0.80);
+      font-size: 12px;
+      padding: 1em;
+    }
+    .back-to-top:hover {    
+      background-color: rgba(135, 135, 135, 0.50);
+      text-decoration:none;
+      color:#ffffff;
+    }
     @media (max-width: 500px) {
       h1 {
         font-size: 50px;

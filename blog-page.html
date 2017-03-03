@@ -2,10 +2,15 @@
 <head>
   <link rel="stylesheet" type="text/css"
   		href="css/blog.css">
-<style>
-	@import url('https://fonts.googleapis.com/css?family=Coming+Soon|Raleway:200');
-</style>
-
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+  </script>
+  <style>
+	 @import url('https://fonts.googleapis.com/css?family=Coming+Soon|Raleway:200');
+  </style>
 </head>
 <body>
   <header>
@@ -17,7 +22,7 @@
       <li><a href="contact-me.html" class="hvr-grow">Contact me</a></li>
     </ul>
   </header>
-  <div id="blog-entries">
+  <main>
   <article class="blog-entry">
   <div>
     <h2>Week 1</h2>
@@ -39,10 +44,27 @@
     <button>Like</button>
   </article>
   </div>
-  </div>
+  </main>
+  <!-- potential jump to the top button//-->
+  <a href="#" class="back-to-top">Back to Top</a>
   <script>
-    $("button").on("click", function() {
-      alert("Clicked!");
-    });
+  jQuery(document).ready(function() { 
+    var offset = 220;
+    var duration = 500;
+    jQuery(window).scroll(function() {
+    if (jQuery(this).scrollTop() > offset) {
+    jQuery('.back-to-top').fadeIn(duration);
+    } else 
+  {
+  jQuery('.back-to-top').fadeOut(duration);
+  }
+  });
+
+  jQuery('.back-to-top').click(function(event) {
+  event.preventDefault();
+  jQuery('html, body').animate({scrollTop: 0}, duration);
+  return false;
+  })
+  });
   </script>
 </body>
