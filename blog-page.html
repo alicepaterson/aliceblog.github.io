@@ -2,12 +2,6 @@
 <head>
   <link rel="stylesheet" type="text/css"
   		href="css/blog.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-  <script>
-    $("button").on("click", function() {
-      alert("Clicked!");
-    });
-  </script>
   <style>
 	 @import url('https://fonts.googleapis.com/css?family=Coming+Soon|Raleway:200');
   </style>
@@ -48,7 +42,12 @@
   </main>
   <!-- jump to the top button//-->
   <a href="#top" class="back-to-top">Back to Top</a>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
   <script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+  </script><script>
   jQuery(document).ready(function() { 
     var offset = 220;
     var duration = 500;
