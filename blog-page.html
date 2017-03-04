@@ -2,12 +2,6 @@
 <head>
   <link rel="stylesheet" type="text/css"
   		href="css/blog.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-  <script>
-    $("button").on("click", function() {
-      alert("Clicked!");
-    });
-  </script>
   <style>
 	 @import url('https://fonts.googleapis.com/css?family=Coming+Soon|Raleway:200');
   </style>
@@ -28,26 +22,36 @@
   <div>
     <h2>Week 1</h2>
     <p>This week we began the course and learnt some basic tags in html, including paragraphs, lists and fonts. I learnt the basic set up for a html document, added a header, menu bar and a contact me button to the page, although these are static and non-responsive at the moment. I also learnt how to change the background using links with different images, which I am uploading to imgur.com. I can also now add borders to images.</p>
-    <button>Like</button>
+    <button class="like">Like</button>
   </article>
   </div>
   <div>
   <article class="blog-entry">
     <h2>Week 2</h2>
     <p>This week we began using css to format our webpages. I have changed the menu bar background to be transparent using rgba colours. The fonts on this page are linked to googlefonts, and I have used classes/ids to specify the style of individual elements on my page. I have also been playing with the font-weight to make the text more readable on this page</p>
-    <button>Like</button>
+    <button class="like">Like</button>
   </article>
   </div>
   <div>
   <article class="blog-entry">
     <h2>Week 3</h2>
     <p>This week we learnt what GitHub is, how to create a repository, branches, commits, and how to pull requests. I have uploaded the local files for my site to GitHub and am now using that to track the changes I am making. I also published this page using GitHub pages!As part of my homework I have looked at how to make my page more responsive, and I have added hover effects to the menu links so that they become larger when you hover over them. I have also done some reading about Javascript and have added a 'back to top' button to my blog page, which fades into view when you scroll to the bottom, that links back to the top of the page. For this to work I had to add a JQuery script link to the top of the page, although I have read that the loading speed may be better if I put it at the bottom. I am going to investigate this more!</p>
-    <button>Like</button>
+    <button class="like">Like</button>
   </article>
   </div>
   </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
   <!-- jump to the top button//-->
   <a href="#top" class="back-to-top">Back to Top</a>
+  <!-- JQuery for like button//-->
+  <script>
+    $(document).ready(function(){
+      $("button.like").click(function() {
+        $(this).toggleClass("like-clicked");
+      });
+    });
+  </script>
+  <!-- JQuery for back to top button//-->
   <script>
   jQuery(document).ready(function() { 
     var offset = 220;

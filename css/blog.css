@@ -100,8 +100,24 @@
       transition-property: transform;
     }
     .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
-      -webkit-transform: scale(1.1);
-      transform: scale(1.1);
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+    .like {
+      background: white;
+      color: black;
+      border: 2px black;
+      border-radius: 2px;
+      padding: 4px 8px 4px 8px;
+      cursor:pointer;
+    }
+    .like-clicked {
+      background: rgb(0, 191, 255);
+      color: white;
+      border: 2px black;
+      border-radius: 2px;
+      padding: 4px 8px 4px 8px;
+      cursor:pointer;
     }
     .back-to-top {
       display:none;
@@ -119,6 +135,7 @@
       text-decoration:none;
       color:#ffffff;
     }
+
     @media (max-width: 500px) {
       h1 {
         font-size: 50px;
